@@ -1,6 +1,7 @@
 let addToDoButton = document.getElementById('addtodo');
 let todoContainer = document.getElementById('todocontainer');
 let input = document.getElementById('inputfield');
+let clearall = document.querySelector(".clear-btn");
 
 
 /*addToDoButton.addEventListener('click', function(){
@@ -48,6 +49,6 @@ todoContainer.addEventListener('click',(e) => {
     }
 })
 
-/*clearall.addEventListener('click', (e) => {
-    newItem.innerHTML = ''
-})*/
+clearall.addEventListener('click', (e) => {
+    todoContainer.innerHTML = ''
+})
